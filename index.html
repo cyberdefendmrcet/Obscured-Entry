@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="SecureCorp Portal - Your gateway to secure services">
+  <meta name="keywords" content="Security, Portal, CTF, Challenge, Login">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecureCorp Portal</title>
+  <style>
+    /* Reset and basic styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #1c1c1c; color: #e0e0e0; line-height: 1.6; }
+    a { color: #ff7f50; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    
+    /* Navigation bar */
+    header { background: #333; padding: 20px 0; border-bottom: 2px solid #444; }
+    nav ul { list-style: none; display: flex; justify-content: center; }
+    nav ul li { margin: 0 15px; }
+    
+    /* Hero section */
+    .hero { background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover; padding: 100px 20px; text-align: center; }
+    .hero h1 { font-size: 3em; margin-bottom: 20px; }
+    .hero p { font-size: 1.2em; }
+    
+    /* Section styles */
+    section { padding: 60px 20px; border-bottom: 1px solid #333; }
+    .container { max-width: 1000px; margin: auto; }
+    .title { font-size: 2em; margin-bottom: 20px; text-align: center; }
+    
+    /* Footer styles */
+    footer { background: #222; padding: 20px; text-align: center; font-size: 0.9em; }
+    
+    /* Misc decoy elements */
+    .decoy-box { background: #2a2a2a; padding: 20px; margin: 20px 0; border-left: 4px solid #ff7f50; }
+    .code-snippet { background: #000; color: #0f0; padding: 10px; font-family: monospace; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <!-- Main Header with Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to SecureCorp</h1>
+    <p>Your security is our priority. Experience state-of-the-art protection with our exclusive portal.</p>
+    <!-- Decoy Data -->
+    <div class="code-snippet">
+      // Initialization sequence<br>
+      var sysInit = '0xA1B2C3';<br>
+      console.log('System: ' + sysInit);
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="title">About SecureCorp</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum convallis neque, vitae fermentum nulla efficitur vitae. Nulla facilisi. Cras interdum diam at quam sollicitudin, sit amet hendrerit ipsum efficitur. Aliquam erat volutpat. In a lorem ut nunc vestibulum ultrices sit amet non quam. Donec sit amet magna non odio aliquam convallis.</p>
+      <p>Suspendisse potenti. Praesent at vehicula mi. Nulla ac mauris non metus dictum interdum. Phasellus volutpat felis at justo feugiat, sed vulputate ipsum consequat. Proin placerat tellus et ex lacinia, vitae tincidunt justo sollicitudin.</p>
+      <div class="decoy-box">
+        <p>System Check: Integrity OK. Flag status: <em>FLAG{fake_flag_12345}</em></p>
+      </div>
+      <p>Morbi at libero nec nunc congue consequat. Duis nec diam et urna ultricies scelerisque. Nulla interdum, magna non tincidunt suscipit, purus nisi tincidunt ex, eget commodo est sapien eget nulla.</p>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2 class="title">Our Services</h2>
+      <ul>
+        <li>24/7 Monitoring &amp; Alerts</li>
+        <li>Advanced Encryption Standards</li>
+        <li>Cloud Security Management</li>
+        <li>Incident Response and Forensics</li>
+        <li>Penetration Testing</li>
+      </ul>
+      <p>Curabitur ut dignissim purus. Vivamus a ullamcorper turpis, ac dignissim erat. Sed quis magna nec ligula malesuada tincidunt non vitae urna. Integer aliquam dolor non dui efficitur, nec varius ex laoreet.</p>
+      <div class="code-snippet">
+        // Hidden configuration data<br>
+        const conf = { mode: 'DEBUG', token: '1234-5678-90AB-CDEF' };<br>
+        // Warning: Do not modify!
+      </div>
+      <p>Etiam nec dolor nec leo ultrices consequat. Aenean non turpis sit amet lorem condimentum tempus.</p>
+    </div>
+  </section>
+  
+  <!-- Login Section (Fake Login Form) -->
+  <section id="login">
+    <div class="container">
+      <h2 class="title">User Login</h2>
+      <form action="#" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" style="padding:10px; width:250px; margin:5px;"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" style="padding:10px; width:250px; margin:5px;"><br>
+        <button type="submit" style="padding:10px 20px; background:#ff7f50; border:none; cursor:pointer;">Login</button>
+      </form>
+      <p style="margin-top:20px;">Having trouble logging in? Contact <a href="mailto:support@securecorp.com">support@securecorp.com</a>.</p>
+      <div class="decoy-box">
+        <p>DEBUG LOG: [User login attempt logged].</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="title">Contact Us</h2>
+      <p>If you have any questions, feel free to reach out through our support channels.</p>
+      <p>Email: <a href="mailto:info@securecorp.com">info@securecorp.com</a></p>
+      <p>Phone: +1 (555) 123-4567</p>
+      <p>Address: 123 Cyber Lane, Internet City, Webland</p>
+      <div class="code-snippet">
+        // Contact API keys (dummy values)<br>
+        var apiKey = 'ABCDEF-123456-XYZ';<br>
+        var secretKey = '098765-XYZ-ABCDE';
+      </div>
+    </div>
+  </section>
+  
+  <!-- Miscellaneous Section with misleading details -->
+  <section id="misc">
+    <div class="container">
+      <h2 class="title">System Diagnostics</h2>
+      <p>Performing advanced diagnostics on secure nodes... <em>[Status: Inconclusive]</em></p>
+      <p>Running checks on data integrity and encryption layers. Results:</p>
+      <ul>
+        <li>Encryption: AES-256 active</li>
+        <li>Firewall: Configured to max security</li>
+        <li>Access Logs: <span style="color:#ff7f50;">FLAG{should_not_be_here}</span></li>
+        <li>Backup Protocols: Enabled and tested</li>
+      </ul>
+      <div class="decoy-box">
+        <p>Error Code: 0xDEADBEEF encountered. Refer to manual section 7B for resolution.</p>
+      </div>
+      <p>Null operation sequence initiated. No further action required at this time.</p>
+      <div class="code-snippet">
+        // Pseudo-code for secure handshake<br>
+        function secureHandshake() {<br>
+          &nbsp;&nbsp;/* Initialize handshake sequence */<br>
+          &nbsp;&nbsp;let step1 = 'init';<br>
+          &nbsp;&nbsp;let step2 = 'auth';<br>
+          &nbsp;&nbsp;return step1 + '-' + step2;<br>
+        }<br>
+        console.log(secureHandshake());
+      </div>
+    </div>
+  </section>
+  
+  <!-- Extra Decoy Comments and Data -->
+  <!-- NOTICE: Do not modify below comments -->
+  <!-- FLAG{FAKE_FLAG_FOR_TESTING} -->
+  <!-- TempID: 9876-5432-10AB-CDEF -->
+  <!-- Debug Mode: ENABLED -->
+  <!-- Encryption Key (Beta): 1234567890abcdef -->
+  <!-- DO NOT USE THIS CODE IN PRODUCTION -->
+  <!-- Misleading Note: This is a simulation environment for secure testing. -->
+  <!-- DO NOT CONFUSE THIS FLAG: FLAG{ANOTHER_FAKE_FLAG} -->
+  
+  <!-- REAL FLAG: D3F3ND{hidden-in-source} -->
+  
+  <!-- Random Data Block Start -->
+  <!-- Begin Block: XJ9-LM2-PLQ -->
+  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. -->
+  <!-- End Block: XJ9-LM2-PLQ -->
+  <!-- Random Data Block Start -->
+  <!-- Begin Block: R4ND0M-5TR1NG -->
+  <!-- Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. -->
+  <!-- End Block: R4ND0M-5TR1NG -->
+  <!-- Random Data Block End -->
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SecureCorp. All rights reserved.</p>
+    <p>Version: 4.2.0 | Build ID: 20Z-79X-QWERTY</p>
+  </footer>
+</body>
+</html>
